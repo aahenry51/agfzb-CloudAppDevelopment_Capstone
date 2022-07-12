@@ -39,7 +39,7 @@ jobs:
         run: ibmcloud target --cf-api https://api.$IBM_CLOUD_REGION.cf.cloud.ibm.com -r $IBM_CLOUD_REGION -o $IBM_CLOUD_ORG 
         shell: bash
       - name: List all applications
-        run: ibmcloud cf apps
+        run: ibmcloud target --cf
         shell: bash
       - name: Deploy manifest file
         run: ibmcloud cf push -f ./$MANIFEST_NAME
