@@ -6,6 +6,6 @@ applications:
     buildpack: python_buildpack
   - name: djangoapp-nginx
     routes:
-      - route: finalcapstoneAlphi.us-south.cf.appdomain.cloud/static
+      - route: finalcapstoneAlphi.us-south.cf.appdomain.cloud
     memory: 128M
     buildpack: staticfile_buildpack
